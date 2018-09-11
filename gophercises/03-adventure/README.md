@@ -1,4 +1,4 @@
-# Gophercises - 2 - Create Your Own Adventure
+# Gophercises - 3 - Create Your Own Adventure
 
 ## Problem
 

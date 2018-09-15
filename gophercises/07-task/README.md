@@ -8,7 +8,13 @@
 
 ## Solution
 
-* I went directly for bonus, minus the home directory part. See examples further down:
+You will need to `go get`:
+
+* https://godoc.org/github.com/urfave/cli
+* https://github.com/boltdb/bolt
+* https://github.com/olekukonko/tablewriter
+
+* I went directly for `bonus`, minus the home directory part. See examples further down:
 
   ```
   $ go run main.go database.go --help

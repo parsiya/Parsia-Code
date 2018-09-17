@@ -52,3 +52,13 @@ Issues:
 
 * Nested links are ignored. Child links are not stored and their text is stored as part of the parent link.
     * For an example run `go run main.go -f ex5.html`.
+
+### strings.Builder
+
+* Example: https://golang.org/pkg/strings/#example_Builder
+
+``` go
+var sb strings.Builder  // Create the builder.
+sb.WriteString("whatever")  // Write to it. We can use fmt.Sprintf as param too.
+return sb.String()  // Get the final string.
+```

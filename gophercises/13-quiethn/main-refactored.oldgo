@@ -1,0 +1,122 @@
+// Contains the refactored original code.
+// No concurrency or any caching. Only the function has been isolated.
+
+package mainrefactored
+
+import (
+	"flag"
+	"fmt"
+	"html/template"
+	"log"
+	"net/http"
+	"net/url"
+	"strings"
+	"time"
+
+	"github.com/parsiya/Parsia-Code/gophercises/13-quiethn/hn"
+)
+
+func main() {
+	// parse flags
+	var port, numStories int
+	flag.IntVar(&port, "port", 3000, "the port to start the web server on")
+	flag.IntVar(&numStories, "num_stories", 30, "the number of top stories to display")
+	flag.Parse()
+
+	tpl := template.Must(template.ParseFiles("./index.gohtml"))
+
+	http.HandleFunc("/", handler(numStories, tpl))
+
+	// Start the server
+	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%d", port), nil))
+}
+
+func handler(numStories int, tpl *template.Template) http.HandlerFunc {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		start := time.Now()
+
+		stories, err := getStories(numStories)
+		if err != nil {
+
+			http.Error(w, fmt.Sprintf("Failed to load top stories : %v", err),
+				http.StatusInternalServerError)
+			return
+		}
+
+		data := templateData{
+			Stories: stories,
+			Time:    time.Now().Sub(start),
+		}
+		err = tpl.Execute(w, data)
+		if err != nil {
+			http.Error(w, "Failed to process the template", http.StatusInternalServerError)
+			return
+		}
+	})
+}
+
+func isStoryLink(item item) bool {
+	return item.Type == "story" && item.URL != ""
+}
+
+func parseHNItem(hnItem hn.Item) item {
+	ret := item{Item: hnItem}
+	url, err := url.Parse(ret.URL)
+	if err == nil {
+		ret.Host = strings.TrimPrefix(url.Hostname(), "www.")
+	}
+	return ret
+}
+
+// item is the same as the hn.Item, but adds the Host field
+type item struct {
+	hn.Item
+	Host string
+}
+
+type templateData struct {
+	Stories []item
+	Time    time.Duration
+}
+
+// getStories returns the top n stories of HN.
+// Supposed to increase performance.
+func getStories(numStories int) ([]item, error) {
+
+	var stories []item
+	// We are not touching this part.
+	var client hn.Client
+	ids, err := client.TopItems()
+	if err != nil {
+		return stories, err
+	}
+
+	// Concurrency happens here.
+
+	for _, id := range ids {
+		it, err := getOneStory(id, client)
+		if err != nil {
+			continue
+		}
+		stories = append(stories, it)
+		if len(stories) >= numStories {
+			break
+		}
+	}
+	return stories, nil
+}
+
+// getOneStory downloads one story and returns the content.
+func getOneStory(id int, c hn.Client) (item, error) {
+
+	var i item
+	hnItem, err := c.GetItem(id)
+	if err != nil {
+		return i, err
+	}
+	i = parseHNItem(hnItem)
+	if !isStoryLink(i) {
+		return i, fmt.Errorf("not a story")
+	}
+	return i, nil
+}

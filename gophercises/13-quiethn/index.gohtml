@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Quiet Hacker News</title>
+    <style>
+      body {
+        padding: 20px;
+      }
+      body, a {
+        color: #333;
+        font-family: sans-serif;
+      }
+      li {
+        padding: 4px 0;
+      }
+      .host {
+        color: #888;
+      }
+      .time {
+        color: #888;
+        padding: 10px 0;
+      }
+      .footer, .footer a {
+        color: #888;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Quiet Hacker News</h1>
+    <ol>
+      {{range .Stories}}
+        <li><a href="{{.URL}}">{{.Title}}</a> <span class="host">({{.Host}})</span></li>
+      {{end}}
+    </ol>
+    <p class="time">This page was rendered in {{.Time}}</p>
+    <p class="footer">This page is heavily inspired by <a href="https://speak.sh/posts/quiet-hacker-news">Quiet Hacker News</a> and was adapted for a <a href="https://gophercises.com/exercises/quiet_hn">Gophercises Exercise</a>.</p>
+  </body>
+</html>

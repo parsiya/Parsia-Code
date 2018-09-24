@@ -41,6 +41,7 @@ func recoverME(app http.Handler) http.HandlerFunc {
 		}()
 		myRW := myResponseWriter{ResponseWriter: w}
 		app.ServeHTTP(&myRW, r)
+		myRW.Flusher()
 	}
 }
 
@@ -66,7 +67,7 @@ func hello(w http.ResponseWriter, r *http.Request) {
 type myResponseWriter struct {
 	http.ResponseWriter
 	status int
-	msg    []byte
+	msg    [][]byte
 }
 
 // WriteHeader adds a custom status header to our response.
@@ -78,14 +79,7 @@ func (r *myResponseWriter) WriteHeader(status int) {
 // Write implements Write.
 // Should return the number of bytes written and any error.
 func (r *myResponseWriter) Write(b []byte) (int, error) {
-	if r.status == 0 {
-		r.status = 200
-	}
-	// If we write to the embedded write, then it will just display the Hello
-	// in errors.
-	// n, err := r.ResponseWriter.Write(b)
-	// Instead we write to the message.
-	r.msg = append(r.msg, b...)
+	r.msg = append(r.msg, b)
 	return len(b), nil
 }
 
@@ -101,9 +95,12 @@ func (r *myResponseWriter) Hijack() (net.Conn, *bufio.ReadWriter, error) {
 
 // Flusher
 func (r *myResponseWriter) Flusher() {
-	fl, exists := r.ResponseWriter.(http.Flusher)
-	if exists {
-		r.WriteHeader(r.status)
-		fl.Flush()
+	// This should not be necessary, but let's check the status and add it.
+	if r.status != 0 {
+		r.ResponseWriter.WriteHeader(r.status)
+	}
+	for _, m := range r.msg {
+		// Write everything to response.
+		r.ResponseWriter.Write(m)
 	}
 }

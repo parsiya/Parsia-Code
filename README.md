@@ -23,6 +23,8 @@ This table will help but may not be current. Look inside each individual directo
     - [.NET Remoting](#net-remoting)
     - [Malware Adventure](#malware-adventure)
     - [Octopress Image Popup Plugin Forked](#octopress-image-popup-plugin-forked)
+    - [pcap2csv](#pcap2csv)
+    - [Cryptopals - C](#cryptopals---c)
 
 <!-- /MarkdownTOC -->
 
@@ -75,6 +77,11 @@ This is a fork of the the Octopress Image Popup Plugin at [https://github.com/ct
 - Blog post
     - [Image Popup and Octopress][pop-up-blog].
 
+## [pcap2csv](pcap2csv)
+A few python scripts to extract information from pcap files to csv.
+
+## [Cryptopals - C](cryptopals/c)
+Doing the first few cryptopals challenges in C (why?!).
 
 <!-- Links -->
 

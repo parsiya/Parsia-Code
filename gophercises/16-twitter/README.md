@@ -112,6 +112,7 @@ type Retweeter struct {
 	TwitterUser User `json:"user"`
 }
 ```
+
 ## Usage
 
 ```

@@ -8,7 +8,7 @@
 
 ## Solution
 
-* [main-refactored](main-refactored.old.go): Original code refactored to prepare it for goroutines.
+* [main-refactored](main-refactored.oldgo): Original code refactored to prepare it for goroutines.
 * [main.go](main.go): Goroutine and cache. It's messy but it works and it's fast.
 
 ## Lessons Learned

@@ -55,5 +55,3 @@ func (e *Exam) Shuffle() {
 	})
 }
 ```
-
-

@@ -25,6 +25,7 @@ This table will help but may not be current. Look inside each individual directo
     - [Octopress Image Popup Plugin Forked](#octopress-image-popup-plugin-forked)
     - [pcap2csv](#pcap2csv)
     - [Cryptopals - C](#cryptopals---c)
+    - [Calculator in C++](#calculator-in-c)
 
 <!-- /MarkdownTOC -->
 
@@ -82,6 +83,9 @@ A few python scripts to extract information from pcap files to csv.
 
 ## [Cryptopals - C](cryptopals/c)
 Doing the first few cryptopals challenges in C (why?!).
+
+## [Calculator in C++](calculator.cpp)
+I found this code in an old archive. It's apparently some calculator I wrote back in undergrad. It draws shapes on the screen and depending on where you click, you get a number. Pretty much all of it was done manually. The only thing I remember, is that I needed to have `C:\\egavga.bgi` for it to work. Fun times.
 
 <!-- Links -->
 

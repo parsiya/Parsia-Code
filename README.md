@@ -2,7 +2,7 @@
 This repository contains most of the code that I write for my blog posts. I realized I have random repositories on Github. I am consolidating them into one.
 
 # Individual Licenses
-Most code in this repository is governed under the [MIT](../LICENSE-code). Some code may have a different license, check each directory for a license file.
+Most code in this repository is governed under the [MIT](LICENSE-code). Some code may have a different license, check each directory for a license file.
 
 # Security Code
 Security code will be mostly in [https://github.com/parsiya/Go-Security](https://github.com/parsiya/Go-Security).
@@ -19,6 +19,7 @@ This table will help but may not be current. Look inside each individual directo
     - [WinAppDbg Tutorials](#winappdbg-tutorials)
     - [Cryptopals - Go](#cryptopals---go)
     - [Gophercises - Go](#gophercises---go)
+    - [Blackfriday and gographviz - Go](#blackfriday-and-gographviz---go)
     - [Hipchat Proxy](#hipchat-proxy)
     - [.NET Remoting](#net-remoting)
     - [Malware Adventure](#malware-adventure)
@@ -47,6 +48,9 @@ Doing the Cryptopals challenges with `lol no generics`.
 
 ## [Gophercises - Go](gophercises/)
 [Gophercises](https://gophercises.com/) by Jon Calhoun.
+
+## Blackfriday and gographviz - Go
+Code for blog post [Blackfriday's Parser and Generating graphs with gographviz][blackfriday-gographviz].
 
 ## [Hipchat Proxy](hipchat-proxy)
 Small proxy that I wrote for proxying Hipchat.
@@ -104,3 +108,4 @@ I found this code in an old archive. It's apparently some calculator I wrote bac
 [winappdbg-3]: https://parsiya.net/blog/2017-11-15-winappdbg---part-3---manipulating-function-calls/
 [winappdbg-4]: https://parsiya.net/blog/2017-11-15-winappdbg---part-4---bruteforcing-flareon-2017---challenge-3/
 [go-pcap]: https://parsiya.net/blog/2017-12-03-go-and-pcaps/
+[blackfriday-gographviz]: https://parsiya.net/blog/2018-10-28-blackfridays-parser-and-generating-graphs-with-gographviz/

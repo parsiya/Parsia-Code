@@ -20,6 +20,7 @@ This table will help but may not be current. Look inside each individual directo
     - [Cryptopals - Go](#cryptopals---go)
     - [Gophercises - Go](#gophercises---go)
     - [Blackfriday and gographviz - Go](#blackfriday-and-gographviz---go)
+    - [Byte Wrangling and Windows Filetime - Go](#byte-wrangling-and-windows-filetime---go)
     - [Hipchat Proxy](#hipchat-proxy)
     - [.NET Remoting](#net-remoting)
     - [Malware Adventure](#malware-adventure)
@@ -49,8 +50,11 @@ Doing the Cryptopals challenges with `lol no generics`.
 ## [Gophercises - Go](gophercises/)
 [Gophercises](https://gophercises.com/) by Jon Calhoun.
 
-## Blackfriday and gographviz - Go
+## [Blackfriday and gographviz - Go](markdown-parsing)
 Code for blog post [Blackfriday's Parser and Generating graphs with gographviz][blackfriday-gographviz].
+
+## [Byte Wrangling and Windows Filetime - Go](filetime-bytewrangling/)
+Code for blog post [Windows Filetime Timestamps and Byte Wrangling with Go][byte-wrangling].
 
 ## [Hipchat Proxy](hipchat-proxy)
 Small proxy that I wrote for proxying Hipchat.
@@ -109,3 +113,4 @@ I found this code in an old archive. It's apparently some calculator I wrote bac
 [winappdbg-4]: https://parsiya.net/blog/2017-11-15-winappdbg---part-4---bruteforcing-flareon-2017---challenge-3/
 [go-pcap]: https://parsiya.net/blog/2017-12-03-go-and-pcaps/
 [blackfriday-gographviz]: https://parsiya.net/blog/2018-10-28-blackfridays-parser-and-generating-graphs-with-gographviz/
+[byte-wrangling]: https://parsiya.net/blog/2018-11-01-windows-filetime-timestamps-and-byte-wrangling-with-go/

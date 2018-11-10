@@ -17,10 +17,12 @@ This table will help but may not be current. Look inside each individual directo
 - [Security Code](#security-code)
 - [Code Index](#code-index)
     - [WinAppDbg Tutorials](#winappdbg-tutorials)
-    - [Cryptopals - Go](#cryptopals---go)
-    - [Gophercises - Go](#gophercises---go)
-    - [Blackfriday and gographviz - Go](#blackfriday-and-gographviz---go)
-    - [Byte Wrangling and Windows Filetime - Go](#byte-wrangling-and-windows-filetime---go)
+    - [Go](#go)
+        - [Cryptopals](#cryptopals)
+        - [Gophercises](#gophercises)
+        - [Blackfriday and gographviz](#blackfriday-and-gographviz)
+        - [Byte Wrangling and Windows Filetime](#byte-wrangling-and-windows-filetime)
+        - [filePath.Ext notes](#filepathext-notes)
     - [Hipchat Proxy](#hipchat-proxy)
     - [.NET Remoting](#net-remoting)
     - [Malware Adventure](#malware-adventure)
@@ -44,17 +46,23 @@ Code for my set of WinAppDbg tutorials.
 - [Part 3 - Manipulating Function Calls][winappdbg-3]
 - [Part 4 - Bruteforcing FlareOn 2017 - Challenge 3][winappdbg-4]
 
-## [Cryptopals - Go](cryptopals/go)
+## Go
+Code in Go.
+
+### [Cryptopals](cryptopals/go)
 Doing the Cryptopals challenges with `lol no generics`.
 
-## [Gophercises - Go](gophercises/)
+### [Gophercises](gophercises/)
 [Gophercises](https://gophercises.com/) by Jon Calhoun.
 
-## [Blackfriday and gographviz - Go](markdown-parsing)
+### [Blackfriday and gographviz](markdown-parsing)
 Code for blog post [Blackfriday's Parser and Generating graphs with gographviz][blackfriday-gographviz].
 
-## [Byte Wrangling and Windows Filetime - Go](filetime-bytewrangling/)
+### [Byte Wrangling and Windows Filetime](filetime-bytewrangling/)
 Code for blog post [Windows Filetime Timestamps and Byte Wrangling with Go][byte-wrangling].
+
+### [filePath.Ext notes](filepath-ext)
+Code for blog post [filepath.Ext Notes][filepath-ext].
 
 ## [Hipchat Proxy](hipchat-proxy)
 Small proxy that I wrote for proxying Hipchat.
@@ -114,3 +122,4 @@ I found this code in an old archive. It's apparently some calculator I wrote bac
 [go-pcap]: https://parsiya.net/blog/2017-12-03-go-and-pcaps/
 [blackfriday-gographviz]: https://parsiya.net/blog/2018-10-28-blackfridays-parser-and-generating-graphs-with-gographviz/
 [byte-wrangling]: https://parsiya.net/blog/2018-11-01-windows-filetime-timestamps-and-byte-wrangling-with-go/
+[filepath-ext]: https://parsiya.net/blog/2018-11-10-filepath.ext-notes/

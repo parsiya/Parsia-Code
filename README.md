@@ -16,20 +16,21 @@ This table will help but may not be current. Look inside each individual directo
 - [Individual Licenses](#individual-licenses)
 - [Security Code](#security-code)
 - [Code Index](#code-index)
-    - [WinAppDbg Tutorials](#winappdbg-tutorials)
-    - [Go](#go)
-        - [Cryptopals](#cryptopals)
-        - [Gophercises](#gophercises)
-        - [Blackfriday and gographviz](#blackfriday-and-gographviz)
-        - [Byte Wrangling and Windows Filetime](#byte-wrangling-and-windows-filetime)
-        - [filePath.Ext notes](#filepathext-notes)
-    - [Hipchat Proxy](#hipchat-proxy)
-    - [.NET Remoting](#net-remoting)
-    - [Malware Adventure](#malware-adventure)
-    - [Octopress Image Popup Plugin Forked](#octopress-image-popup-plugin-forked)
-    - [pcap2csv](#pcap2csv)
-    - [Cryptopals - C](#cryptopals---c)
-    - [Calculator in C++](#calculator-in-c)
+  - [WinAppDbg Tutorials](#winappdbg-tutorials)
+  - [Go](#go)
+    - [Cryptopals](#cryptopals)
+    - [Gophercises](#gophercises)
+    - [Blackfriday and gographviz](#blackfriday-and-gographviz)
+    - [Byte Wrangling and Windows Filetime](#byte-wrangling-and-windows-filetime)
+    - [filePath.Ext notes](#filepathext-notes)
+  - [Hipchat Proxy](#hipchat-proxy)
+  - [.NET Remoting](#net-remoting)
+  - [Malware Adventure](#malware-adventure)
+  - [Cryptography in Python Burp Extensions](#cryptography-in-python-burp-extensions)
+  - [Octopress Image Popup Plugin Forked](#octopress-image-popup-plugin-forked)
+  - [pcap2csv](#pcap2csv)
+  - [Cryptopals - C](#cryptopals---c)
+  - [Calculator in C++](#calculator-in-c)
 
 <!-- /MarkdownTOC -->
 
@@ -88,8 +89,13 @@ PAWS 2.1 is a fork by `Matthias C. Hormann` at [https://github.com/Moonbase59/PA
 - Github repository (because there are links to it)
     - [https://github.com/parsiya/malwareadventure][malware-adventure-github]
 
+## [Cryptography in Python Burp Extensions](python-burp-crypto)
+Code and example program used in:
+
+- [Cryptography in Python Burp Extensions](https://parsiya.net/blog/2018-12-23-cryptography-in-python-burp-extensions/)
+
 ## [Octopress Image Popup Plugin Forked](https://github.com/parsiya/octopress-image-popup-forked)
-This is a fork of the the Octopress Image Popup Plugin at [https://github.com/ctdk/octopress-image-popup][original-popup] by Jeremy Bingham. The original instructions did not work for me out of the box so I made some minor changes. Because it has a different license, I am keeping it in a separate repository.
+This is a fork of the Octopress Image Popup Plugin at [https://github.com/ctdk/octopress-image-popup][original-popup] by Jeremy Bingham. The original instructions did not work for me out of the box so I made some minor changes. Because it has a different license, I am keeping it in a separate repository.
 
 - Blog post
     - [Image Popup and Octopress][pop-up-blog].

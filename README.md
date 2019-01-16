@@ -24,6 +24,7 @@ This table will help but may not be current. Look inside each individual directo
     - [Byte Wrangling and Windows Filetime](#byte-wrangling-and-windows-filetime)
     - [filePath.Ext notes](#filepathext-notes)
   - [Hipchat Proxy](#hipchat-proxy)
+  - [SANS Holiday Hack Challenge 2018](#sans-holiday-hack-challenge-2018)
   - [.NET Remoting](#net-remoting)
   - [Malware Adventure](#malware-adventure)
   - [Cryptography in Python Burp Extensions](#cryptography-in-python-burp-extensions)
@@ -73,6 +74,17 @@ Small proxy that I wrote for proxying Hipchat.
 - Related blogs:
     - [Proxying Hipchat Part 1: Where did the Traffic Go?][hipchat-1]
     - [Proxying Hipchat Part 2: So You Think You Can Use Burp?][hipchat-2]
+
+## [SANS Holiday Hack Challenge 2018](sans-holidayhack-2018)
+See the write-up at:
+
+* https://parsiya.net/blog/2019-01-15-sans-holiday-hack-challenge-2018-solutions/
+
+Files:
+
+* `decrypt.go`: Decrypts the password vault.
+* `cleaned-malware.ps1`: Cleaned version of the PowerShell malware.
+
 
 ## [.NET Remoting](net-remoting)
 Code and example program used in:

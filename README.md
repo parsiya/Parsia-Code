@@ -27,7 +27,9 @@ This table will help but may not be current. Look inside each individual directo
   - [SANS Holiday Hack Challenge 2018](#sans-holiday-hack-challenge-2018)
   - [.NET Remoting](#net-remoting)
   - [Malware Adventure](#malware-adventure)
-  - [Cryptography in Python Burp Extensions](#cryptography-in-python-burp-extensions)
+  - [Burp](#burp)
+    - [Cryptography in Python Burp Extensions](#cryptography-in-python-burp-extensions)
+    - [Hiding OPTIONS in Burp](#hiding-options-in-burp)
   - [Octopress Image Popup Plugin Forked](#octopress-image-popup-plugin-forked)
   - [pcap2csv](#pcap2csv)
   - [Cryptopals - C](#cryptopals---c)
@@ -49,7 +51,7 @@ Code for my set of WinAppDbg tutorials.
 - [Part 4 - Bruteforcing FlareOn 2017 - Challenge 3][winappdbg-4]
 
 ## Go
-Code in Go.
+Go is dope, also see https://github.com/parsiya/Go-Security.
 
 ### [Cryptopals](cryptopals/go)
 Doing the Cryptopals challenges with `lol no generics`.
@@ -101,10 +103,18 @@ PAWS 2.1 is a fork by `Matthias C. Hormann` at [https://github.com/Moonbase59/PA
 - Github repository (because there are links to it)
     - [https://github.com/parsiya/malwareadventure][malware-adventure-github]
 
-## [Cryptography in Python Burp Extensions](python-burp-crypto)
+## Burp
+Mostly Burp extension code.
+
+### [Cryptography in Python Burp Extensions](python-burp-crypto)
 Code and example program used in:
 
-- [Cryptography in Python Burp Extensions](https://parsiya.net/blog/2018-12-23-cryptography-in-python-burp-extensions/)
+- [Cryptography in Python Burp Extensions][python-burp-crypto-blog]
+
+### [Hiding OPTIONS in Burp](burp-filter-options)
+Code used in:
+
+- [Hiding OPTIONS - An Adventure in Dealing with Burp Proxy in an Extension][burp-filter-options-blog]
 
 ## [Octopress Image Popup Plugin Forked](https://github.com/parsiya/octopress-image-popup-forked)
 This is a fork of the Octopress Image Popup Plugin at [https://github.com/ctdk/octopress-image-popup][original-popup] by Jeremy Bingham. The original instructions did not work for me out of the box so I made some minor changes. Because it has a different license, I am keeping it in a separate repository.
@@ -141,3 +151,5 @@ I found this code in an old archive. It's apparently some calculator I wrote bac
 [blackfriday-gographviz]: https://parsiya.net/blog/2018-10-28-blackfridays-parser-and-generating-graphs-with-gographviz/
 [byte-wrangling]: https://parsiya.net/blog/2018-11-01-windows-filetime-timestamps-and-byte-wrangling-with-go/
 [filepath-ext]: https://parsiya.net/blog/2018-11-10-filepath.ext-notes/
+[python-burp-crypto-blog]: https://parsiya.net/blog/2018-12-23-cryptography-in-python-burp-extensions/
+[burp-filter-options-blog]: https://parsiya.net/blog/2019-04-06-hiding-options-an-adventure-in-dealing-with-burp-proxy-in-an-extension/

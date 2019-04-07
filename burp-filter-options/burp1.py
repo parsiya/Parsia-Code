@@ -1,9 +1,12 @@
 # Burp extension to modify OPTIONS requests.
 # modified "example traffic redirector" https://raw.githubusercontent.com/PortSwigger/example-traffic-redirector/master/python/TrafficRedirector.py
 
-# enable for burp-exceptions - see https://github.com/securityMB/burp-exceptions
-# from exceptions_fix import FixBurpExceptions
-# import sys
+# support for burp-exceptions - see https://github.com/securityMB/burp-exceptions
+try:
+    from exceptions_fix import FixBurpExceptions
+    import sys
+except ImportError:
+    pass
 
 from burp import IBurpExtender
 from burp import IHttpListener
@@ -17,6 +20,9 @@ class BurpExtender(IBurpExtender, IHttpListener):
     def	registerExtenderCallbacks(self, callbacks):
         # obtain an extension helpers object
         self._helpers = callbacks.getHelpers()
+
+        # enable for burp-exceptions
+        # sys.stdout = callbacks.getStdout()
         
         # set our extension name
         callbacks.setExtensionName("Filter OPTIONS 1")
@@ -76,8 +82,8 @@ class BurpExtender(IBurpExtender, IHttpListener):
         # and we are done
         return
 
-# enable for burp-exceptions
-# FixBurpExceptions()
-
-
-
+# support for burp-exceptions
+try:
+    FixBurpExceptions()
+except:
+    pass

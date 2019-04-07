@@ -7,9 +7,12 @@
 # 3. Burp HTTP History will think the MIME TYPE of request is CSS
 # 4. Now you can hide them all by filtering CSS from the filtering menu
 
-# enable for burp-exceptions - see https://github.com/securityMB/burp-exceptions
-# from exceptions_fix import FixBurpExceptions
-# import sys
+# support for burp-exceptions - see https://github.com/securityMB/burp-exceptions
+try:
+    from exceptions_fix import FixBurpExceptions
+    import sys
+except ImportError:
+    pass
 
 from burp import IBurpExtender
 from burp import IHttpListener
@@ -23,6 +26,9 @@ class BurpExtender(IBurpExtender, IHttpListener):
     def	registerExtenderCallbacks(self, callbacks):
         # obtain an extension helpers object
         self._helpers = callbacks.getHelpers()
+
+        # enable for burp-exceptions
+        # sys.stdout = callbacks.getStdout()
         
         # set our extension name
         callbacks.setExtensionName("Filter OPTIONS 3")
@@ -91,8 +97,8 @@ class BurpExtender(IBurpExtender, IHttpListener):
         # and we are done
         return
 
-# for burp-exceptions
-FixBurpExceptions()
-
-
-
+# support for burp-exceptions
+try:
+    FixBurpExceptions()
+except:
+    pass

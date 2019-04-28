@@ -30,6 +30,7 @@ This table will help but may not be current. Look inside each individual directo
   - [Burp](#burp)
     - [Cryptography in Python Burp Extensions](#cryptography-in-python-burp-extensions)
     - [Hiding OPTIONS in Burp](#hiding-options-in-burp)
+  - [Endpoint Discovery using Windows DNS Cache](#endpoint-discovery-using-windows-dns-cache)
   - [Octopress Image Popup Plugin Forked](#octopress-image-popup-plugin-forked)
   - [pcap2csv](#pcap2csv)
   - [Cryptopals - C](#cryptopals---c)
@@ -87,7 +88,6 @@ Files:
 * `decrypt.go`: Decrypts the password vault.
 * `cleaned-malware.ps1`: Cleaned version of the PowerShell malware.
 
-
 ## [.NET Remoting](net-remoting)
 Code and example program used in:
 
@@ -115,6 +115,11 @@ Code and example program used in:
 Code used in:
 
 - [Hiding OPTIONS - An Adventure in Dealing with Burp Proxy in an Extension][burp-filter-options-blog]
+
+## [Endpoint Discovery using Windows DNS Cache](dns-cache)
+A couple of PowerShell scripts that use the Windows DNS cache to discover application endpoints.
+
+- Blog post: [Thick Client Proxying - Part 9 - The Windows DNS Cache][dns-cache]
 
 ## [Octopress Image Popup Plugin Forked](https://github.com/parsiya/octopress-image-popup-forked)
 This is a fork of the Octopress Image Popup Plugin at [https://github.com/ctdk/octopress-image-popup][original-popup] by Jeremy Bingham. The original instructions did not work for me out of the box so I made some minor changes. Because it has a different license, I am keeping it in a separate repository.
@@ -153,3 +158,4 @@ I found this code in an old archive. It's apparently some calculator I wrote bac
 [filepath-ext]: https://parsiya.net/blog/2018-11-10-filepath.ext-notes/
 [python-burp-crypto-blog]: https://parsiya.net/blog/2018-12-23-cryptography-in-python-burp-extensions/
 [burp-filter-options-blog]: https://parsiya.net/blog/2019-04-06-hiding-options-an-adventure-in-dealing-with-burp-proxy-in-an-extension/
+[dns-cache]: https://parsiya.net/blog/2019-04-28-thick-client-proxying-part-9-the-windows-dns-cache/

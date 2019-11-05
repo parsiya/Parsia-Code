@@ -16,25 +16,26 @@ This table will help but may not be current. Look inside each individual directo
 - [Individual Licenses](#individual-licenses)
 - [Security Code](#security-code)
 - [Code Index](#code-index)
-  - [WinAppDbg Tutorials](#winappdbg-tutorials)
-  - [Go](#go)
-    - [Cryptopals](#cryptopals)
-    - [Gophercises](#gophercises)
-    - [Blackfriday and gographviz](#blackfriday-and-gographviz)
-    - [Byte Wrangling and Windows Filetime](#byte-wrangling-and-windows-filetime)
-    - [filePath.Ext notes](#filepathext-notes)
-  - [Hipchat Proxy](#hipchat-proxy)
-  - [SANS Holiday Hack Challenge 2018](#sans-holiday-hack-challenge-2018)
-  - [.NET Remoting](#net-remoting)
-  - [Malware Adventure](#malware-adventure)
-  - [Burp](#burp)
-    - [Cryptography in Python Burp Extensions](#cryptography-in-python-burp-extensions)
-    - [Hiding OPTIONS in Burp](#hiding-options-in-burp)
-  - [Endpoint Discovery using Windows DNS Cache](#endpoint-discovery-using-windows-dns-cache)
-  - [Octopress Image Popup Plugin Forked](#octopress-image-popup-plugin-forked)
-  - [pcap2csv](#pcap2csv)
-  - [Cryptopals - C](#cryptopals---c)
-  - [Calculator in C++](#calculator-in-c)
+    - [WinAppDbg Tutorials](#winappdbg-tutorials)
+    - [Go](#go)
+        - [Cryptopals](#cryptopals)
+        - [Gophercises](#gophercises)
+        - [Blackfriday and gographviz](#blackfriday-and-gographviz)
+        - [Byte Wrangling and Windows Filetime](#byte-wrangling-and-windows-filetime)
+        - [filePath.Ext notes](#filepathext-notes)
+    - [Hipchat Proxy](#hipchat-proxy)
+    - [SANS Holiday Hack Challenge 2018](#sans-holiday-hack-challenge-2018)
+    - [.NET Remoting](#net-remoting)
+    - [Malware Adventure](#malware-adventure)
+    - [Burp](#burp)
+        - [Cryptography in Python Burp Extensions](#cryptography-in-python-burp-extensions)
+        - [Hiding OPTIONS in Burp](#hiding-options-in-burp)
+        - [Swing in Python Burp Extensions](#swing-in-python-burp-extensions)
+    - [Endpoint Discovery using Windows DNS Cache](#endpoint-discovery-using-windows-dns-cache)
+    - [Octopress Image Popup Plugin Forked](#octopress-image-popup-plugin-forked)
+    - [pcap2csv](#pcap2csv)
+    - [Cryptopals - C](#cryptopals---c)
+    - [Calculator in C++](#calculator-in-c)
 
 <!-- /MarkdownTOC -->
 
@@ -115,6 +116,11 @@ Code and example program used in:
 Code used in:
 
 - [Hiding OPTIONS - An Adventure in Dealing with Burp Proxy in an Extension][burp-filter-options-blog]
+
+### Swing in Python Burp Extensions
+
+* Part 1 blog: https://parsiya.net/blog/2019-11-04-swing-in-python-burp-extensions-part-1/
+* [Part 1 code](jython-swing-1)
 
 ## [Endpoint Discovery using Windows DNS Cache](dns-cache)
 A couple of PowerShell scripts that use the Windows DNS cache to discover application endpoints.

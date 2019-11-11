@@ -119,8 +119,13 @@ Code used in:
 
 ### Swing in Python Burp Extensions
 
-* Part 1 blog: https://parsiya.net/blog/2019-11-04-swing-in-python-burp-extensions-part-1/
-* [Part 1 code](jython-swing-1)
+* Part 1 blog: Swing in Python Burp Extensions - Part 1
+    * https://parsiya.net/blog/2019-11-04-swing-in-python-burp-extensions-part-1/
+    * [Part 1 code](jython-swing-1)
+* Part 2 blog:
+    * Swing in Python Burp Extensions - Part 2 - NetBeans and TableModels
+    * https://parsiya.net/blog/2019-11-11-swing-in-python-burp-extensions-part-2-netbeans-and-tablemodels/
+    * [Part 2 code](jython-swing-2)
 
 ## [Endpoint Discovery using Windows DNS Cache](dns-cache)
 A couple of PowerShell scripts that use the Windows DNS cache to discover application endpoints.

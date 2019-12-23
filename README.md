@@ -31,6 +31,7 @@ This table will help but may not be current. Look inside each individual directo
         - [Cryptography in Python Burp Extensions](#cryptography-in-python-burp-extensions)
         - [Hiding OPTIONS in Burp](#hiding-options-in-burp)
         - [Swing in Python Burp Extensions](#swing-in-python-burp-extensions)
+        - [Using Mozilla Rhino to Run JavaScript in Java](#using-mozilla-rhino-to-run-javascript-in-java)
     - [Endpoint Discovery using Windows DNS Cache](#endpoint-discovery-using-windows-dns-cache)
     - [Octopress Image Popup Plugin Forked](#octopress-image-popup-plugin-forked)
     - [pcap2csv](#pcap2csv)
@@ -127,6 +128,11 @@ Code used in:
     * https://parsiya.net/blog/2019-11-11-swing-in-python-burp-extensions-part-2-netbeans-and-tablemodels/
     * [Part 2 code](jython-swing-2)
 
+### [Using Mozilla Rhino to Run JavaScript in Java](java-rhino)
+Code used in:
+
+- [Using Mozilla Rhino to Run JavaScript in Java][java-rhino]
+
 ## [Endpoint Discovery using Windows DNS Cache](dns-cache)
 A couple of PowerShell scripts that use the Windows DNS cache to discover application endpoints.
 
@@ -170,3 +176,4 @@ I found this code in an old archive. It's apparently some calculator I wrote bac
 [python-burp-crypto-blog]: https://parsiya.net/blog/2018-12-23-cryptography-in-python-burp-extensions/
 [burp-filter-options-blog]: https://parsiya.net/blog/2019-04-06-hiding-options-an-adventure-in-dealing-with-burp-proxy-in-an-extension/
 [dns-cache]: https://parsiya.net/blog/2019-04-28-thick-client-proxying-part-9-the-windows-dns-cache/
+[java-rhino]: https://parsiya.net/blog/2019-12-22-using-mozilla-rhino-to-run-javascript-in-java/

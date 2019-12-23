@@ -1,0 +1,49 @@
+// Apply the application plugin (runs the 'java' plugin implicitly).
+apply plugin: 'application'
+
+// Use Maven (because Burp Extender is on Maven)
+repositories {
+     mavenCentral()
+}
+
+dependencies {
+    // Add the Burp Extender interface
+    compile 'org.mozilla:rhino:1.7.11'
+    compile 'commons-io:commons-io:2.6'
+}
+
+sourceSets {
+    main {
+        java {
+            // Set the source directory to "src"
+            srcDir 'src'
+            exclude 'resources/'
+        }
+    }
+    main {
+        resources {
+            // Set the resource directory to "src/resources"
+            srcDir 'src/resources'
+        }
+    }
+}
+
+// Put the final jar file in a different location
+libsDirName = '../release'
+
+// This is needed if we want to run the jar with "gradlew run"
+// mainClassName = 'beautify.Beautify'
+
+// Create a task for bundling all dependencies into a jar file.
+task bigJar(type: Jar) {
+    // Make an executable jar that can be executed with "java -jar"
+    manifest {
+        attributes(
+                'Main-Class': 'beautify.Beautify'
+        )
+    }
+    // Bundle all dependencies together in one jar file.
+    baseName = project.name + '-all'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}

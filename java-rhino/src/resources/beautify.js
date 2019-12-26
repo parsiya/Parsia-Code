@@ -1,7 +1,3 @@
-// Add global.
-var global = {};
-
-
 /* AUTO-GENERATED. DO NOT MODIFY. */
 /*
 
@@ -4043,9 +4039,3 @@ var global = {};
     }
     
     }());
-
-// END beautify.js
-
-// Add the export
-beautifyFunction = global.js_beautify;
-

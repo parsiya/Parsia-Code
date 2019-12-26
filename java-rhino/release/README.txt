@@ -1,0 +1,1 @@
+Copy cookiebanner.min.js here or provide a full path in your command line to it if it's not here.

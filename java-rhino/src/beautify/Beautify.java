@@ -5,8 +5,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
 import java.io.StringWriter;
-import java.net.URI;
-import java.net.URISyntaxException;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
@@ -67,30 +65,28 @@ public class Beautify {
 
         // Solution: https://stackoverflow.com/a/16338524 -- doesn't work
         cx.evaluateString(scope, "var global = {}; "+jsbeautifyFile, "global", 0, null);
-        
+
         // Add our own export.
         cx.evaluateString(scope, "var js_beautify = global.js_beautify;", "export", 0, null);
-
+        
         // Get the function.
         Object fjsBeautify = scope.get("js_beautify", scope);
-        // System.out.println(x);
+        String result = "";
 
         if (!(fjsBeautify instanceof Function)) {
             System.out.println("js_beautify is undefined or not a function.");
             // System.out.println(fjsBeautify.toString());
-            
         } else {
             Object functionArgs[] = { uglyJS };
             // Object functionArgs[] = { "var x='1234';var y='4444';var z='3123123';" };
             Function f = (Function)fjsBeautify;
-            Object result = f.call(cx, scope, scope, functionArgs);
+            Object rst = f.call(cx, scope, scope, functionArgs);
             // System.out.println(report);
-            Context.exit();
-            return Context.toString(result);
+            result = Context.toString(rst);
         }
         // We should throw an exception here in production code.
         Context.exit();
-        return null;
+        return result;
     }
 
     public static String getResourceFile(Class cls, String name) throws IOException {

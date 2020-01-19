@@ -1,14 +1,18 @@
 # Random Code
-This repository contains most of the code that I write for my blog posts. I realized I have random repositories on Github. I am consolidating them into one.
+This repository contains most of the code that I write for my blog posts. I
+realized I have random repositories on Github. I am consolidating them into one.
 
 # Individual Licenses
-Most code in this repository is governed under the [MIT](LICENSE-code). Some code may have a different license, check each directory for a license file.
+Most code in this repository is governed under the [MIT](LICENSE-code). Some
+code may have a different license, check each directory for a license file.
 
 # Security Code
-Security code will be mostly in [https://github.com/parsiya/Go-Security](https://github.com/parsiya/Go-Security).
+Security code will be mostly in
+[https://github.com/parsiya/Go-Security](https://github.com/parsiya/Go-Security).
 
 # Code Index
-This table will help but may not be current. Look inside each individual directory to see the code.
+This table will help but may not be current. Look inside each individual
+directory to see the code.
 
 <!-- MarkdownTOC -->
 
@@ -96,9 +100,13 @@ Code and example program used in:
 - [Intro to .NET Remoting for Hackers][net-remoting]
 
 ## [Malware Adventure](malware-adventure)
-Small text adventure written in Python using PAWS (Python Adventure Writing System). Created as part of the class activity for "Advanced Topics in Computer Security" in 2013 at Johns Hopkins.
+Small text adventure written in Python using PAWS (Python Adventure Writing
+System). Created as part of the class activity for "Advanced Topics in Computer
+Security" in 2013 at Johns Hopkins.
 
-PAWS 2.1 is a fork by `Matthias C. Hormann` at [https://github.com/Moonbase59/PAWS][paws-github]. PAWS was originally created by `Roger Plowman`.
+PAWS 2.1 is a fork by `Matthias C. Hormann` at
+[https://github.com/Moonbase59/PAWS][paws-github]. PAWS was originally created
+by `Roger Plowman`.
 
 - Blog post
     - [Malware Adventure][malware-adventure-blog]
@@ -139,7 +147,11 @@ A couple of PowerShell scripts that use the Windows DNS cache to discover applic
 - Blog post: [Thick Client Proxying - Part 9 - The Windows DNS Cache][dns-cache]
 
 ## [Octopress Image Popup Plugin Forked](https://github.com/parsiya/octopress-image-popup-forked)
-This is a fork of the Octopress Image Popup Plugin at [https://github.com/ctdk/octopress-image-popup][original-popup] by Jeremy Bingham. The original instructions did not work for me out of the box so I made some minor changes. Because it has a different license, I am keeping it in a separate repository.
+This is a fork of the Octopress Image Popup Plugin at
+[https://github.com/ctdk/octopress-image-popup][original-popup] by Jeremy
+Bingham. The original instructions did not work for me out of the box so I made
+some minor changes. Because it has a different license, I am keeping it in a
+separate repository.
 
 - Blog post
     - [Image Popup and Octopress][pop-up-blog].
@@ -151,7 +163,10 @@ A few python scripts to extract information from pcap files to csv.
 Doing the first few cryptopals challenges in C (why?!).
 
 ## [Calculator in C++](calculator.cpp)
-I found this code in an old archive. It's apparently some calculator I wrote back in undergrad. It draws shapes on the screen and depending on where you click, you get a number. Pretty much all of it was done manually. The only thing I remember, is that I needed to have `C:\\egavga.bgi` for it to work. Fun times.
+I found this code in an old archive. It's some calculator I wrote back in
+undergrad. It draws shapes on the screen and depending on where you click, you
+get a number. Pretty much all of it was done manually. The only thing I
+remember, is that I needed to have `C:\\egavga.bgi` for it to work. Fun times.
 
 <!-- Links -->
 

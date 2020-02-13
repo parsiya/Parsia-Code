@@ -1,48 +1,41 @@
-# Random Code
+# Random Code <!-- omit in toc -->
 This repository contains most of the code that I write for my blog posts. I
 realized I have random repositories on Github. I am consolidating them into one.
 
-# Individual Licenses
+# Individual Licenses <!-- omit in toc -->
 Most code in this repository is governed under the [MIT](LICENSE-code). Some
 code may have a different license, check each directory for a license file.
 
-# Security Code
+# Security Code <!-- omit in toc -->
 Security code will be mostly in
 [https://github.com/parsiya/Go-Security](https://github.com/parsiya/Go-Security).
 
-# Code Index
+# Code Index <!-- omit in toc -->
 This table will help but may not be current. Look inside each individual
 directory to see the code.
 
-<!-- MarkdownTOC -->
-
-- [Random Code](#random-code)
-- [Individual Licenses](#individual-licenses)
-- [Security Code](#security-code)
-- [Code Index](#code-index)
-    - [WinAppDbg Tutorials](#winappdbg-tutorials)
-    - [Go](#go)
-        - [Cryptopals](#cryptopals)
-        - [Gophercises](#gophercises)
-        - [Blackfriday and gographviz](#blackfriday-and-gographviz)
-        - [Byte Wrangling and Windows Filetime](#byte-wrangling-and-windows-filetime)
-        - [filePath.Ext notes](#filepathext-notes)
-    - [Hipchat Proxy](#hipchat-proxy)
-    - [SANS Holiday Hack Challenge 2018](#sans-holiday-hack-challenge-2018)
-    - [.NET Remoting](#net-remoting)
-    - [Malware Adventure](#malware-adventure)
-    - [Burp](#burp)
-        - [Cryptography in Python Burp Extensions](#cryptography-in-python-burp-extensions)
-        - [Hiding OPTIONS in Burp](#hiding-options-in-burp)
-        - [Swing in Python Burp Extensions](#swing-in-python-burp-extensions)
-        - [Using Mozilla Rhino to Run JavaScript in Java](#using-mozilla-rhino-to-run-javascript-in-java)
-    - [Endpoint Discovery using Windows DNS Cache](#endpoint-discovery-using-windows-dns-cache)
-    - [Octopress Image Popup Plugin Forked](#octopress-image-popup-plugin-forked)
-    - [pcap2csv](#pcap2csv)
-    - [Cryptopals - C](#cryptopals---c)
-    - [Calculator in C++](#calculator-in-c)
-
-<!-- /MarkdownTOC -->
+- [WinAppDbg Tutorials](#winappdbg-tutorials)
+- [Go](#go)
+    - [Cryptopals](#cryptopals)
+    - [Gophercises](#gophercises)
+    - [Blackfriday and gographviz](#blackfriday-and-gographviz)
+    - [Byte Wrangling and Windows Filetime](#byte-wrangling-and-windows-filetime)
+    - [filePath.Ext notes](#filepathext-notes)
+- [Hipchat Proxy](#hipchat-proxy)
+- [SANS Holiday Hack Challenge 2018](#sans-holiday-hack-challenge-2018)
+- [.NET Remoting](#net-remoting)
+- [Malware Adventure](#malware-adventure)
+- [Burp](#burp)
+    - [Cryptography in Python Burp Extensions](#cryptography-in-python-burp-extensions)
+    - [Hiding OPTIONS in Burp](#hiding-options-in-burp)
+    - [Swing in Python Burp Extensions](#swing-in-python-burp-extensions)
+    - [Using Mozilla Rhino to Run JavaScript in Java](#using-mozilla-rhino-to-run-javascript-in-java)
+    - [Java SQLite Test](#java-sqlite-test)
+- [Endpoint Discovery using Windows DNS Cache](#endpoint-discovery-using-windows-dns-cache)
+- [Octopress Image Popup Plugin Forked](#octopress-image-popup-plugin-forked)
+- [pcap2csv](#pcap2csv)
+- [Cryptopals - C](#cryptopals---c)
+- [Calculator in C++](#calculator-in-c)
 
 ## [WinAppDbg Tutorials](winappdbg)
 Code for my set of WinAppDbg tutorials.
@@ -140,6 +133,10 @@ Code used in:
 Code used in:
 
 - [Using Mozilla Rhino to Run JavaScript in Java][java-rhino]
+
+### [Java SQLite Test](java-sqlite-test)
+Sample code to learn how to interact with a SQLite database in Java with
+`org.xerial.sqlite-jdbc`.
 
 ## [Endpoint Discovery using Windows DNS Cache](dns-cache)
 A couple of PowerShell scripts that use the Windows DNS cache to discover application endpoints.

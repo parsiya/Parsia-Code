@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Beautify",
+            "request": "launch",
+            "mainClass": "beautify.Beautify",
+            "projectName": "test-jsbeautify"
+        }
+    ]
+}

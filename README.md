@@ -31,10 +31,12 @@ directory to see the code.
     - [Swing in Python Burp Extensions](#swing-in-python-burp-extensions)
     - [Using Mozilla Rhino to Run JavaScript in Java](#using-mozilla-rhino-to-run-javascript-in-java)
     - [Java SQLite Test](#java-sqlite-test)
+- [Cryptography](#cryptography)
+    - [Cryptopals in C](#cryptopals-in-c)
+    - [Decrypting an Application's Encrypted Log](#decrypting-an-applications-encrypted-log)
 - [Endpoint Discovery using Windows DNS Cache](#endpoint-discovery-using-windows-dns-cache)
 - [Octopress Image Popup Plugin Forked](#octopress-image-popup-plugin-forked)
 - [pcap2csv](#pcap2csv)
-- [Cryptopals - C](#cryptopals---c)
 - [Calculator in C++](#calculator-in-c)
 
 ## [WinAppDbg Tutorials](winappdbg)
@@ -138,6 +140,17 @@ Code used in:
 Sample code to learn how to interact with a SQLite database in Java with
 `org.xerial.sqlite-jdbc`.
 
+## Cryptography
+
+### [Cryptopals in C](cryptopals/c)
+Doing the first few cryptopals challenges in C (why?!).
+
+### [Decrypting an Application's Encrypted Log](decrypt-log)
+This code decrypts an application's logs. It uses the Mersenne Twister Engine
+with a specific seed to create a key stream. See the blog post at:
+
+* [The Encrypted Logz - Some Simple Reverse Engineering][encrypted-logz].
+
 ## [Endpoint Discovery using Windows DNS Cache](dns-cache)
 A couple of PowerShell scripts that use the Windows DNS cache to discover application endpoints.
 
@@ -155,9 +168,6 @@ separate repository.
 
 ## [pcap2csv](pcap2csv)
 A few python scripts to extract information from pcap files to csv.
-
-## [Cryptopals - C](cryptopals/c)
-Doing the first few cryptopals challenges in C (why?!).
 
 ## [Calculator in C++](calculator.cpp)
 I found this code in an old archive. It's some calculator I wrote back in
@@ -189,3 +199,4 @@ remember, is that I needed to have `C:\\egavga.bgi` for it to work. Fun times.
 [burp-filter-options-blog]: https://parsiya.net/blog/2019-04-06-hiding-options-an-adventure-in-dealing-with-burp-proxy-in-an-extension/
 [dns-cache]: https://parsiya.net/blog/2019-04-28-thick-client-proxying-part-9-the-windows-dns-cache/
 [java-rhino]: https://parsiya.net/blog/2019-12-22-using-mozilla-rhino-to-run-javascript-in-java/
+[encrypted-logz]: https:///blog/2020-04-17-the-encrypted-logz-some-simple-reverse-engineering/

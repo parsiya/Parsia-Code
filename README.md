@@ -199,4 +199,4 @@ remember, is that I needed to have `C:\\egavga.bgi` for it to work. Fun times.
 [burp-filter-options-blog]: https://parsiya.net/blog/2019-04-06-hiding-options-an-adventure-in-dealing-with-burp-proxy-in-an-extension/
 [dns-cache]: https://parsiya.net/blog/2019-04-28-thick-client-proxying-part-9-the-windows-dns-cache/
 [java-rhino]: https://parsiya.net/blog/2019-12-22-using-mozilla-rhino-to-run-javascript-in-java/
-[encrypted-logz]: https:///blog/2020-04-17-the-encrypted-logz-some-simple-reverse-engineering/
+[encrypted-logz]: https:///parsiya.net/blog/2020-04-17-the-encrypted-logz-some-simple-reverse-engineering/

@@ -21,10 +21,13 @@ directory to see the code.
     - [Blackfriday and gographviz](#blackfriday-and-gographviz)
     - [Byte Wrangling and Windows Filetime](#byte-wrangling-and-windows-filetime)
     - [filePath.Ext notes](#filepathext-notes)
-- [Hipchat Proxy](#hipchat-proxy)
-- [SANS Holiday Hack Challenge 2018](#sans-holiday-hack-challenge-2018)
+    - [SANS Holiday Hack Challenge 2018](#sans-holiday-hack-challenge-2018)
+- [Python](#python)
+    - [Hipchat Proxy](#hipchat-proxy)
+    - [Malware Adventure](#malware-adventure)
+    - [Customizing SimpleHTTPServer](#customizing-simplehttpserver)
+    - [pcap2csv](#pcap2csv)
 - [.NET Remoting](#net-remoting)
-- [Malware Adventure](#malware-adventure)
 - [Burp](#burp)
     - [Cryptography in Python Burp Extensions](#cryptography-in-python-burp-extensions)
     - [Hiding OPTIONS in Burp](#hiding-options-in-burp)
@@ -36,7 +39,6 @@ directory to see the code.
     - [Decrypting an Application's Encrypted Log](#decrypting-an-applications-encrypted-log)
 - [Endpoint Discovery using Windows DNS Cache](#endpoint-discovery-using-windows-dns-cache)
 - [Octopress Image Popup Plugin Forked](#octopress-image-popup-plugin-forked)
-- [pcap2csv](#pcap2csv)
 - [Calculator in C++](#calculator-in-c)
 
 ## [WinAppDbg Tutorials](winappdbg)
@@ -70,16 +72,7 @@ Code for blog post [Windows Filetime Timestamps and Byte Wrangling with Go][byte
 ### [filePath.Ext notes](filepath-ext)
 Code for blog post [filepath.Ext Notes][filepath-ext].
 
-## [Hipchat Proxy](hipchat-proxy)
-Small proxy that I wrote for proxying Hipchat.
-
-- Main blog post
-    - [Proxying Hipchat Part 3: SSL Added and Removed Here][hipchat-3]
-- Related blogs:
-    - [Proxying Hipchat Part 1: Where did the Traffic Go?][hipchat-1]
-    - [Proxying Hipchat Part 2: So You Think You Can Use Burp?][hipchat-2]
-
-## [SANS Holiday Hack Challenge 2018](sans-holidayhack-2018)
+### [SANS Holiday Hack Challenge 2018](sans-holidayhack-2018)
 See the write-up at:
 
 * https://parsiya.net/blog/2019-01-15-sans-holiday-hack-challenge-2018-solutions/
@@ -89,12 +82,18 @@ Files:
 * `decrypt.go`: Decrypts the password vault.
 * `cleaned-malware.ps1`: Cleaned version of the PowerShell malware.
 
-## [.NET Remoting](net-remoting)
-Code and example program used in:
+## Python
 
-- [Intro to .NET Remoting for Hackers][net-remoting]
+### [Hipchat Proxy](hipchat-proxy)
+Small proxy that I wrote for proxying Hipchat.
 
-## [Malware Adventure](malware-adventure)
+- Main blog post
+    - [Proxying Hipchat Part 3: SSL Added and Removed Here][hipchat-3]
+- Related blogs:
+    - [Proxying Hipchat Part 1: Where did the Traffic Go?][hipchat-1]
+    - [Proxying Hipchat Part 2: So You Think You Can Use Burp?][hipchat-2]
+
+### [Malware Adventure](malware-adventure)
 Small text adventure written in Python using PAWS (Python Adventure Writing
 System). Created as part of the class activity for "Advanced Topics in Computer
 Security" in 2013 at Johns Hopkins.
@@ -107,6 +106,18 @@ by `Roger Plowman`.
     - [Malware Adventure][malware-adventure-blog]
 - Github repository (because there are links to it)
     - [https://github.com/parsiya/malwareadventure][malware-adventure-github]
+
+### [Customizing SimpleHTTPServer](python-simplehttpserver)
+Code for the blog post
+[Customizing Python's SimpleHTTPServer][python-httpserver].
+
+### [pcap2csv](pcap2csv)
+A few python scripts to extract information from pcap files to csv.
+
+## [.NET Remoting](net-remoting)
+Code and example program used in:
+
+- [Intro to .NET Remoting for Hackers][net-remoting]
 
 ## Burp
 Mostly Burp extension code.
@@ -166,9 +177,6 @@ separate repository.
 - Blog post
     - [Image Popup and Octopress][pop-up-blog].
 
-## [pcap2csv](pcap2csv)
-A few python scripts to extract information from pcap files to csv.
-
 ## [Calculator in C++](calculator.cpp)
 I found this code in an old archive. It's some calculator I wrote back in
 undergrad. It draws shapes on the screen and depending on where you click, you
@@ -200,3 +208,4 @@ remember, is that I needed to have `C:\\egavga.bgi` for it to work. Fun times.
 [dns-cache]: https://parsiya.net/blog/2019-04-28-thick-client-proxying-part-9-the-windows-dns-cache/
 [java-rhino]: https://parsiya.net/blog/2019-12-22-using-mozilla-rhino-to-run-javascript-in-java/
 [encrypted-logz]: https:///parsiya.net/blog/2020-04-17-the-encrypted-logz-some-simple-reverse-engineering/
+[python-httpserver]: https://parsiya.net/blog/2020-11-15-customizing-pythons-simplehttpserver/

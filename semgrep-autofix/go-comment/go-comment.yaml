@@ -1,0 +1,24 @@
+rules:
+  - id: cookie-missing-httponly-comment
+    severity: WARNING
+    languages:
+      - go
+    patterns:
+      - pattern-not-inside: |
+          http.Cookie{
+            ...,
+            HttpOnly: ...,
+            ...,
+          }
+      - pattern: |
+          http.Cookie{
+            ...,
+          }
+    message: Match found
+    fix-regex:
+      regex: (?s)(\s+)(.*)
+      replacement: |
+        \1// Match found by cookie-missing-httponly-comment.
+        \1// HttpOnly must be set to true here.
+        \1\2
+      count: 1

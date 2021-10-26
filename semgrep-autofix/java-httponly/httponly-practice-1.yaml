@@ -1,0 +1,10 @@
+# Try at https://semgrep.dev/s/parsiya:java-httponly-practice-1.
+rules:
+- id: cookie-missing-httponly-1
+  patterns:
+    - pattern: $COOKIE.setHttpOnly(false);
+    - pattern-not-inside: $COOKIE.setValue(""); ...
+  message: Match found
+  languages: [java]
+  severity: WARNING
+  fix: $COOKIE.setHttpOnly(true);

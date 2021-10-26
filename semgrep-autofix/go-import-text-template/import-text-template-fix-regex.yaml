@@ -1,0 +1,13 @@
+# import-text-template-fix-regex.yaml
+rules:
+- id: import-text-template-fix-regex
+  message: Match found.
+  severity: WARNING
+  pattern: |
+    import "text/template"
+  languages:
+    - go
+  fix-regex:
+    regex: text/template
+    replacement: html/template
+    count: 1

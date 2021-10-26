@@ -1,0 +1,10 @@
+# cbc-padding-oracle.yaml
+# original rule: https://github.com/returntocorp/semgrep-rules/blob/develop/java/lang/security/audit/cbc-padding-oracle.yaml
+rules:
+  - id: cbc-padding-oracle
+    severity: WARNING
+    message: Match found
+    languages:
+      - java
+    pattern: $CIPHER.getInstance("=~/.*\/CBC\/PKCS5Padding/")
+    fix: $CIPHER.getInstance("AES/GCM/NoPadding")

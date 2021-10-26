@@ -1,0 +1,16 @@
+rules:
+  - id: cookie-missing-httponly-fix-regex-practice-final
+    message: Match found
+    severity: WARNING
+    languages:
+      - java
+    patterns:
+      - pattern-not-inside: $COOKIE.setValue(""); ...
+      - pattern-not-inside: $COOKIE.setHttpOnly(...); ...
+      - pattern: $RESPONSE.addCookie($COOKIE);
+    fix-regex:
+      regex: (\s*)(.*addCookie\((.*)\))
+      replacement: |
+        \1\3.setHttpOnly(true);
+        \1\2
+      count: 1

@@ -1,0 +1,24 @@
+# go-httponly-1.yaml
+rules:
+  - id: cookie-missing-httponly-1
+    severity: WARNING
+    languages:
+      - go
+    patterns:
+      - pattern-not-inside: |
+          http.Cookie{
+            ...,
+            HttpOnly: ...,
+            ...,
+          }
+      - pattern: |
+          http.Cookie{
+            ...,
+          }
+    message: Match found
+    fix-regex:
+      regex: (?s)(\s+)(.*)
+      replacement: |
+        \1\2
+        \1    HttpOnly: true,
+      count: 1

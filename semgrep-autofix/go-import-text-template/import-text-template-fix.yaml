@@ -1,0 +1,10 @@
+# import-text-template-fix.yaml
+rules:
+- id: import-text-template-fix
+  message: Match found.
+  severity: WARNING
+  pattern: |
+    import "text/template"
+  languages:
+    - go
+  fix: import "html/template"

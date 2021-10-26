@@ -15,6 +15,8 @@ This table will help but may not be current. Look inside each individual
 directory to see the code.
 
 - [WinAppDbg Tutorials](#winappdbg-tutorials)
+- [Semgrep](#semgrep)
+    - [Semgrep Autofix](#semgrep-autofix)
 - [Go](#go)
     - [Cryptopals](#cryptopals)
     - [Gophercises](#gophercises)
@@ -53,6 +55,12 @@ Code for my set of WinAppDbg tutorials.
 - [Part 2 - Function Hooking and Others][winappdbg-2]
 - [Part 3 - Manipulating Function Calls][winappdbg-3]
 - [Part 4 - Bruteforcing FlareOn 2017 - Challenge 3][winappdbg-4]
+
+## Semgrep
+
+### [Semgrep Autofix](semgrep-autofix)
+Practice rules and code for the blog
+[A Hands-On Intro to Semgrep's Autofix][semgrep-autofix-blog].
 
 ## Go
 Go is dope, also see https://github.com/parsiya/Go-Security.
@@ -209,3 +217,4 @@ remember, is that I needed to have `C:\\egavga.bgi` for it to work. Fun times.
 [java-rhino]: https://parsiya.net/blog/2019-12-22-using-mozilla-rhino-to-run-javascript-in-java/
 [encrypted-logz]: https:///parsiya.net/blog/2020-04-17-the-encrypted-logz-some-simple-reverse-engineering/
 [python-httpserver]: https://parsiya.net/blog/2020-11-15-customizing-pythons-simplehttpserver/
+[semgrep-autofix-blog]: https://parsiya.net/blog/2021-10-23-a-hands-on-intro-to-semgreps-autofix/

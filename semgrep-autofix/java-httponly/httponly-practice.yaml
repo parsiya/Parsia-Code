@@ -1,0 +1,15 @@
+# Removed some sections from
+# https://github.com/returntocorp/semgrep-rules/blob/develop/java/lang/security/audit/cookie-missing-httponly.yaml
+# Try at https://semgrep.dev/s/parsiya:java-httponly-practice.
+rules:
+- id: cookie-missing-httponly
+  message: Match found
+  severity: WARNING
+  languages: [java]
+  patterns:
+  - pattern-not-inside: $COOKIE.setValue(""); ...
+  - pattern-either:
+    - pattern: $COOKIE.setHttpOnly(false);
+    - patterns:
+      - pattern-not-inside: $COOKIE.setHttpOnly(...); ...
+      - pattern: $RESPONSE.addCookie($COOKIE);

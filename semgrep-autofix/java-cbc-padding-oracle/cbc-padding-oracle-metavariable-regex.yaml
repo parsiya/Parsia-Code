@@ -1,0 +1,13 @@
+# cbc-padding-oracle-metavariable-regex.yaml
+rules:
+  - id: cbc-padding-oracle-metavariable-regex
+    message: Match found
+    languages:
+      - java
+    severity: WARNING
+    patterns:
+      - pattern: $CIPHER.getInstance($INS)
+      - metavariable-regex:
+          metavariable: $INS
+          regex: .*\/CBC\/PKCS5Padding
+    fix: $CIPHER.getInstance("AES/GCM/NoPadding")

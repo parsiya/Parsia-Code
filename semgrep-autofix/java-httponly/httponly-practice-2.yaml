@@ -1,0 +1,13 @@
+rules:
+  - id: cookie-missing-httponly-2
+    message: Match found
+    severity: WARNING
+    languages:
+      - java
+    patterns:
+      - pattern-not-inside: $COOKIE.setValue(""); ...
+      - pattern-not-inside: $COOKIE.setHttpOnly(...); ...
+      - pattern: $RESPONSE.addCookie($COOKIE);
+    fix: |
+      $COOKIE.setHttpOnly(true);
+      $RESPONSE.addCookie($COOKIE);

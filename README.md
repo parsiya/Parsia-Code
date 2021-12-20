@@ -62,7 +62,7 @@ Code for my set of WinAppDbg tutorials.
 
 ### [Code WSL Remote RCE - CVE-2021-4389](code-wsl-rce/README.md)
 See the blog at
-[https://parsiya.net/blog/2021-12-20-rce-in-visual-studio-codes-remote-wsl-for-fun-and-negative-profit].arrayBuffer
+[https://parsiya.net/blog/2021-12-20-rce-in-visual-studio-codes-remote-wsl-for-fun-and-negative-profit][code-wsl-blog].
 
 Also exists in [https://github.com/parsiya/code-wsl-rce][code-wsl-gh].
 

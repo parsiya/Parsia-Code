@@ -15,6 +15,8 @@ This table will help but may not be current. Look inside each individual
 directory to see the code.
 
 - [WinAppDbg Tutorials](#winappdbg-tutorials)
+- [Proof of Concepts](#proof-of-concepts)
+    - [Code WSL Remote RCE - CVE-2021-4389](#code-wsl-remote-rce---cve-2021-4389)
 - [Semgrep](#semgrep)
     - [Semgrep Autofix](#semgrep-autofix)
 - [Go](#go)
@@ -43,7 +45,7 @@ directory to see the code.
 - [Octopress Image Popup Plugin Forked](#octopress-image-popup-plugin-forked)
 - [Calculator in C++](#calculator-in-c)
 
-## [WinAppDbg Tutorials](winappdbg)
+## [WinAppDbg Tutorials](winappdbg-tutorials)
 Code for my set of WinAppDbg tutorials.
 
 1. Copy the `winappdbg` directory to your Virtual Machine.
@@ -55,6 +57,17 @@ Code for my set of WinAppDbg tutorials.
 - [Part 2 - Function Hooking and Others][winappdbg-2]
 - [Part 3 - Manipulating Function Calls][winappdbg-3]
 - [Part 4 - Bruteforcing FlareOn 2017 - Challenge 3][winappdbg-4]
+
+## Proof of Concepts
+
+### [Code WSL Remote RCE - CVE-2021-4389](code-wsl-rce/README.md)
+See the blog at
+[https://parsiya.net/blog/2021-12-20-rce-in-visual-studio-codes-remote-wsl-for-fun-and-negative-profit].arrayBuffer
+
+Also exists in [https://github.com/parsiya/code-wsl-rce][code-wsl-gh].
+
+[code-wsl-blog]: https://parsiya.net/blog/2021-12-20-rce-in-visual-studio-codes-remote-wsl-for-fun-and-negative-profit
+[code-wsl-gh]: https://github.com/parsiya/code-wsl-rce
 
 ## Semgrep
 

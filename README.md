@@ -16,7 +16,7 @@ directory to see the code.
 
 - [WinAppDbg Tutorials](#winappdbg-tutorials)
 - [Proof of Concepts](#proof-of-concepts)
-    - [Code WSL Remote RCE - CVE-2021-4389](#code-wsl-remote-rce---cve-2021-4389)
+    - [Code WSL Remote RCE - CVE-2021-43907](#code-wsl-remote-rce---cve-2021-43907)
 - [Semgrep](#semgrep)
     - [Semgrep Autofix](#semgrep-autofix)
 - [Go](#go)
@@ -60,7 +60,7 @@ Code for my set of WinAppDbg tutorials.
 
 ## Proof of Concepts
 
-### [Code WSL Remote RCE - CVE-2021-4389](code-wsl-rce/README.md)
+### [Code WSL Remote RCE - CVE-2021-43907](code-wsl-rce/README.md)
 See the blog at
 [https://parsiya.net/blog/2021-12-20-rce-in-visual-studio-codes-remote-wsl-for-fun-and-negative-profit][code-wsl-blog].
 

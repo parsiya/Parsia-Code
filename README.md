@@ -45,7 +45,7 @@ directory to see the code.
 - [Octopress Image Popup Plugin Forked](#octopress-image-popup-plugin-forked)
 - [Calculator in C++](#calculator-in-c)
 
-## [WinAppDbg Tutorials](winappdbg-tutorials)
+## [WinAppDbg Tutorials](winappdbg)
 Code for my set of WinAppDbg tutorials.
 
 1. Copy the `winappdbg` directory to your Virtual Machine.

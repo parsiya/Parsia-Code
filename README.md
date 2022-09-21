@@ -224,7 +224,7 @@ remember, is that I needed to have `C:\\egavga.bgi` for it to work. Fun times.
 [blackfriday-gographviz]: https://parsiya.net/blog/2018-10-28-blackfridays-parser-and-generating-graphs-with-gographviz/
 [byte-wrangling]: https://parsiya.net/blog/2018-11-01-windows-filetime-timestamps-and-byte-wrangling-with-go/
 [filepath-ext]: https://parsiya.net/blog/2018-11-10-filepath.ext-notes/
-[python-burp-crypto-blog]: https://parsiya.net/blog/2018-12-23-cryptography-in-python-burp-extensions/
+[python-burp-crypto-blog]: https://parsiya.net/blog/2018-12-24-cryptography-in-python-burp-extensions/
 [burp-filter-options-blog]: https://parsiya.net/blog/2019-04-06-hiding-options-an-adventure-in-dealing-with-burp-proxy-in-an-extension/
 [dns-cache]: https://parsiya.net/blog/2019-04-28-thick-client-proxying-part-9-the-windows-dns-cache/
 [java-rhino]: https://parsiya.net/blog/2019-12-22-using-mozilla-rhino-to-run-javascript-in-java/

@@ -38,7 +38,7 @@ func main() {
 
 // client.go
 // Client encrypts msg with AES-CFB algorithm using key and iv.
-// Encrypted message is repeatedly sent in a POST reqiest to endpoint via proxy.
+// Encrypted message is repeatedly sent in a POST request to endpoint via proxy.
 func Client(msg, key, iv []byte, proxy *url.URL, serverAddr string) error {
 	// Encrypt the msg.
 	ciphertext, err := Encrypt(msg, key, iv)
@@ -134,7 +134,7 @@ func Encrypt(plaintext, key, iv []byte) ([]byte, error) {
 	return encodedCiphertext, nil
 }
 
-// Decrypt decodes the ciphertext from base64 then decrypts it key and iv using AES-CFB.
+// Decrypt decodes the ciphertext from base64 then decrypts it with key and iv using AES-CFB.
 func Decrypt(ciphertext, key, iv []byte) ([]byte, error) {
 	// Decode ciphertext from base64.
 	decodedCiphertext := make([]byte, base64.StdEncoding.DecodedLen(len(ciphertext)))

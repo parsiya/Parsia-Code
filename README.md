@@ -47,7 +47,7 @@ directory to see the code.
 - [Octopress Image Popup Plugin Forked](#octopress-image-popup-plugin-forked)
 - [Calculator in C++](#calculator-in-c)
 
-## [WinAppDbg Tutorials](winappdbg-tutorials)
+## [WinAppDbg Tutorials](winappdbg)
 Code for my set of WinAppDbg tutorials.
 
 1. Copy the `winappdbg` directory to your Virtual Machine.
@@ -239,4 +239,3 @@ remember, is that I needed to have `C:\\egavga.bgi` for it to work. Fun times.
 [encrypted-logz]: https:///parsiya.net/blog/2020-04-17-the-encrypted-logz-some-simple-reverse-engineering/
 [python-httpserver]: https://parsiya.net/blog/2020-11-15-customizing-pythons-simplehttpserver/
 [semgrep-autofix-blog]: https://parsiya.net/blog/2021-10-23-a-hands-on-intro-to-semgreps-autofix/
-[yaml-rust]: https://parsiya.net/blog/2022-10-16-yaml-wrangling-with-rust/

@@ -32,6 +32,8 @@ directory to see the code.
     - [Customizing SimpleHTTPServer](#customizing-simplehttpserver)
     - [pcap2csv](#pcap2csv)
 - [.NET Remoting](#net-remoting)
+- [Rust](#rust)
+    - [YAML Wrangling with Rust](#yaml-wrangling-with-rust)
 - [Burp](#burp)
     - [Cryptography in Python Burp Extensions](#cryptography-in-python-burp-extensions)
     - [Hiding OPTIONS in Burp](#hiding-options-in-burp)
@@ -140,6 +142,12 @@ Code and example program used in:
 
 - [Intro to .NET Remoting for Hackers][net-remoting]
 
+## Rust
+Fearless Concurrency.
+
+### [YAML Wrangling with Rust](yaml-wrangling-with-rust/)
+Code for the blog post [YAML Wrangling with Rust][yaml-rust].
+
 ## Burp
 Mostly Burp extension code.
 
@@ -231,3 +239,4 @@ remember, is that I needed to have `C:\\egavga.bgi` for it to work. Fun times.
 [encrypted-logz]: https:///parsiya.net/blog/2020-04-17-the-encrypted-logz-some-simple-reverse-engineering/
 [python-httpserver]: https://parsiya.net/blog/2020-11-15-customizing-pythons-simplehttpserver/
 [semgrep-autofix-blog]: https://parsiya.net/blog/2021-10-23-a-hands-on-intro-to-semgreps-autofix/
+[yaml-rust]: https://parsiya.net/blog/2022-10-16-yaml-wrangling-with-rust/

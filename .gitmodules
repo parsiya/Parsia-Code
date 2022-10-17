@@ -1,0 +1,3 @@
+[submodule "yaml-wrangling-with-rust"]
+	path = yaml-wrangling-with-rust
+	url = https://github.com/parsiya/yaml-wrangling-with-rust

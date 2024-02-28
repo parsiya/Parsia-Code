@@ -12,7 +12,7 @@
 
 <!-- Links -->
 
-[winappdbg-1]: https://parsiya.net/blog/2017-11-09-winappdbg---part-1---basics/
-[winappdbg-2]: https://parsiya.net/blog/2017-11-11-winappdbg---part-2---function-hooking-and-others/
-[winappdbg-3]: https://parsiya.net/blog/2017-11-15-winappdbg---part-3---manipulating-function-calls/
-[winappdbg-4]: https://parsiya.net/blog/2017-11-15-winappdbg---part-4---bruteforcing-flareon-2017---challenge-3/
+[winappdbg-1]: https://parsiya.net/blog/2017-11-09-winappdbg-part-1-basics/
+[winappdbg-2]: https://parsiya.net/blog/2017-11-11-winappdbg-part-2-function-hooking-and-others/
+[winappdbg-3]: https://parsiya.net/blog/2017-11-15-winappdbg-part-3-manipulating-function-calls/
+[winappdbg-4]: https://parsiya.net/blog/2017-11-15-winappdbg-part-4-bruteforcing-flareon-2017-challenge-3/

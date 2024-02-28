@@ -60,16 +60,18 @@ Code for my set of WinAppDbg tutorials.
 - [Part 3 - Manipulating Function Calls][winappdbg-3]
 - [Part 4 - Bruteforcing FlareOn 2017 - Challenge 3][winappdbg-4]
 
+[winappdbg-1]: https://parsiya.net/blog/2017-11-09-winappdbg-part-1-basics/
+[winappdbg-2]: https://parsiya.net/blog/2017-11-11-winappdbg-part-2-function-hooking-and-others/
+[winappdbg-3]: https://parsiya.net/blog/2017-11-15-winappdbg-part-3-manipulating-function-calls/
+[winappdbg-4]: https://parsiya.net/blog/2017-11-15-winappdbg-part-4-bruteforcing-flareon-2017-challenge-3/
+
 ## Proof of Concepts
 
 ### [Code WSL Remote RCE - CVE-2021-43907](code-wsl-rce/README.md)
 See the blog at
-[https://parsiya.net/blog/2021-12-20-rce-in-visual-studio-codes-remote-wsl-for-fun-and-negative-profit][code-wsl-blog].
+[https://parsiya.net/blog/2021-vscode-wsl-rce/][code-wsl-blog].
 
 Also exists in [https://github.com/parsiya/code-wsl-rce][code-wsl-gh].
-
-[code-wsl-blog]: https://parsiya.net/blog/2021-12-20-rce-in-visual-studio-codes-remote-wsl-for-fun-and-negative-profit
-[code-wsl-gh]: https://github.com/parsiya/code-wsl-rce
 
 ## Semgrep
 
@@ -224,10 +226,8 @@ remember, is that I needed to have `C:\\egavga.bgi` for it to work. Fun times.
 [paws-github]: https://github.com/Moonbase59/PAWS
 [malware-adventure-blog]: https://parsiya.net/blog/2014-09-21-malware-adventure/
 [malware-adventure-github]: https://github.com/parsiya/malwareadventure
-[winappdbg-1]: https://parsiya.net/blog/2017-11-09-winappdbg---part-1---basics/
-[winappdbg-2]: https://parsiya.net/blog/2017-11-11-winappdbg---part-2---function-hooking-and-others/
-[winappdbg-3]: https://parsiya.net/blog/2017-11-15-winappdbg---part-3---manipulating-function-calls/
-[winappdbg-4]: https://parsiya.net/blog/2017-11-15-winappdbg---part-4---bruteforcing-flareon-2017---challenge-3/
+[code-wsl-blog]: https://parsiya.net/blog/2021-vscode-wsl-rce/
+[code-wsl-gh]: https://github.com/parsiya/code-wsl-rce
 [go-pcap]: https://parsiya.net/blog/2017-12-03-go-and-pcaps/
 [blackfriday-gographviz]: https://parsiya.net/blog/2018-10-28-blackfridays-parser-and-generating-graphs-with-gographviz/
 [byte-wrangling]: https://parsiya.net/blog/2018-11-01-windows-filetime-timestamps-and-byte-wrangling-with-go/
@@ -238,5 +238,5 @@ remember, is that I needed to have `C:\\egavga.bgi` for it to work. Fun times.
 [java-rhino]: https://parsiya.net/blog/2019-12-22-using-mozilla-rhino-to-run-javascript-in-java/
 [encrypted-logz]: https:///parsiya.net/blog/2020-04-17-the-encrypted-logz-some-simple-reverse-engineering/
 [python-httpserver]: https://parsiya.net/blog/2020-11-15-customizing-pythons-simplehttpserver/
-[semgrep-autofix-blog]: https://parsiya.net/blog/2021-10-23-a-hands-on-intro-to-semgreps-autofix/
+[semgrep-autofix-blog]: https://parsiya.net/blog/2021-10-25-a-hands-on-intro-to-semgreps-autofix/
 [yaml-rust]: https://parsiya.net/blog/2022-10-16-yaml-wrangling-with-rust/

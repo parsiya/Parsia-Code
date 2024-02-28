@@ -1,6 +1,6 @@
 # Proof of Concept for VS Code Remote WSL Remote Code Execution - CVE-2021-43907
 See the blog at
-https://parsiya.net/blog/2021-12-20-rce-in-visual-studio-codes-remote-wsl-for-fun-and-negative-profit.
+https://parsiya.net/blog/2021-vscode-wsl-rce/.
 
 Also https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-43907.
 

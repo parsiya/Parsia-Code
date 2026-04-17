@@ -106,3 +106,9 @@
 [submodule "Hugo-Shortcodes"]
 	path = Hugo-Shortcodes
 	url = https://github.com/parsiya/Hugo-Shortcodes.git
+[submodule "code-wsl-rce"]
+	path = code-wsl-rce
+	url = https://github.com/parsiya/code-wsl-rce.git
+[submodule "burputils"]
+	path = burputils
+	url = https://github.com/parsiya/burputils.git

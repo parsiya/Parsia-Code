@@ -43,4 +43,9 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# remove the update file.
+update.md
+# where the python script will store its artifacts
+/tmp
+
 # End of https://www.gitignore.io/api/go,linux,windows

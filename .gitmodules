@@ -1,3 +1,108 @@
 [submodule "yaml-wrangling-with-rust"]
 	path = yaml-wrangling-with-rust
 	url = https://github.com/parsiya/yaml-wrangling-with-rust
+[submodule "gonepm"]
+	path = gonepm
+	url = https://github.com/parsiya/gonepm
+[submodule "get-progamming-with-node-js"]
+	path = get-progamming-with-node-js
+	url = https://github.com/parsiya/get-progamming-with-node-js
+[submodule "burp-sample-extension-java"]
+	path = burp-sample-extension-java
+	url = https://github.com/parsiya/burp-sample-extension-java
+[submodule "bug-diaries"]
+	path = bug-diaries
+	url = https://github.com/parsiya/bug-diaries
+[submodule "evil-electron"]
+	path = evil-electron
+	url = https://github.com/parsiya/evil-electron.git
+[submodule "EvilSwing"]
+	path = EvilSwing
+	url = https://github.com/parsiya/EvilSwing.git
+[submodule "semgrep_go"]
+	path = semgrep_go
+	url = https://github.com/parsiya/semgrep_go.git
+[submodule "semgrep-fun"]
+	path = semgrep-fun
+	url = https://github.com/parsiya/semgrep-fun.git
+[submodule "semgrep-rs"]
+	path = semgrep-rs
+	url = https://github.com/parsiya/semgrep-rs.git
+[submodule "personal-semgrep-server"]
+	path = personal-semgrep-server
+	url = https://github.com/parsiya/personal-semgrep-server.git
+[submodule "semgrep-rs-example"]
+	path = semgrep-rs-example
+	url = https://github.com/parsiya/semgrep-rs-example.git
+[submodule "semgrep-hotspots"]
+	path = semgrep-hotspots
+	url = https://github.com/parsiya/semgrep-hotspots.git
+[submodule "f108-pro"]
+	path = f108-pro
+	url = https://github.com/parsiya/f108-pro.git
+[submodule "golnk"]
+	path = golnk
+	url = https://github.com/parsiya/golnk.git
+[submodule "go-utils"]
+	path = go-utils
+	url = https://github.com/parsiya/go-utils.git
+[submodule "go-gitlab-wrapper"]
+	path = go-gitlab-wrapper
+	url = https://github.com/parsiya/go-gitlab-wrapper.git
+[submodule "borrowedtime"]
+	path = borrowedtime
+	url = https://github.com/parsiya/borrowedtime.git
+[submodule "extract-sni"]
+	path = extract-sni
+	url = https://github.com/parsiya/extract-sni.git
+[submodule "go-helpers"]
+	path = go-helpers
+	url = https://github.com/parsiya/go-helpers.git
+[submodule "Go-Security"]
+	path = Go-Security
+	url = https://github.com/parsiya/Go-Security.git
+[submodule "SSH-Scanner"]
+	path = SSH-Scanner
+	url = https://github.com/parsiya/SSH-Scanner.git
+[submodule "tlsdump"]
+	path = tlsdump
+	url = https://github.com/parsiya/tlsdump.git
+[submodule "sarif-info"]
+	path = sarif-info
+	url = https://github.com/parsiya/sarif-info.git
+[submodule "knee-deep-tree-sitter"]
+	path = knee-deep-tree-sitter
+	url = https://github.com/parsiya/knee-deep-tree-sitter.git
+[submodule "fearless-concurrency"]
+	path = fearless-concurrency
+	url = https://github.com/parsiya/fearless-concurrency.git
+[submodule "Hugo-Octopress"]
+	path = Hugo-Octopress
+	url = https://github.com/parsiya/Hugo-Octopress.git
+[submodule "burputils-montoya"]
+	path = burputils-montoya
+	url = https://github.com/parsiya/burputils-montoya.git
+[submodule "looking-glass"]
+	path = looking-glass
+	url = https://github.com/parsiya/looking-glass.git
+[submodule "eslint-security"]
+	path = eslint-security
+	url = https://github.com/parsiya/eslint-security.git
+[submodule "eslinter"]
+	path = eslinter
+	url = https://github.com/parsiya/eslinter.git
+[submodule "PowerPointGlove"]
+	path = PowerPointGlove
+	url = https://github.com/parsiya/PowerPointGlove.git
+[submodule "vscode-borrowedtime"]
+	path = vscode-borrowedtime
+	url = https://github.com/parsiya/vscode-borrowedtime.git
+[submodule "octopress-image-popup-forked"]
+	path = octopress-image-popup-forked
+	url = https://github.com/parsiya/octopress-image-popup-forked
+[submodule "Hugo-Octopress-Test"]
+	path = Hugo-Octopress-Test
+	url = https://github.com/parsiya/Hugo-Octopress-Test.git
+[submodule "Hugo-Shortcodes"]
+	path = Hugo-Shortcodes
+	url = https://github.com/parsiya/Hugo-Shortcodes.git

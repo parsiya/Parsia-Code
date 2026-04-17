@@ -17,8 +17,16 @@ directory to see the code.
 - [WinAppDbg Tutorials](#winappdbg-tutorials)
 - [Proof of Concepts](#proof-of-concepts)
     - [Code WSL Remote RCE - CVE-2021-43907](#code-wsl-remote-rce---cve-2021-43907)
+    - [Evil Electron](#evil-electron)
+    - [EvilSwing](#evilswing)
 - [Semgrep](#semgrep)
     - [Semgrep Autofix](#semgrep-autofix)
+    - [semgrep\_go](#semgrep_go)
+    - [semgrep-fun](#semgrep-fun)
+    - [semgrep-rs](#semgrep-rs)
+    - [personal-semgrep-server](#personal-semgrep-server)
+    - [semgrep-rs-example](#semgrep-rs-example)
+    - [semgrep-hotspots](#semgrep-hotspots)
 - [Go](#go)
     - [Cryptopals](#cryptopals)
     - [Gophercises](#gophercises)
@@ -26,26 +34,55 @@ directory to see the code.
     - [Byte Wrangling and Windows Filetime](#byte-wrangling-and-windows-filetime)
     - [filePath.Ext notes](#filepathext-notes)
     - [SANS Holiday Hack Challenge 2018](#sans-holiday-hack-challenge-2018)
+    - [gonepm](#gonepm)
+    - [f108-pro](#f108-pro)
+    - [golnk](#golnk)
+    - [go-utils](#go-utils)
+    - [go-gitlab-wrapper](#go-gitlab-wrapper)
+    - [borrowedtime](#borrowedtime)
+    - [extract-sni](#extract-sni)
+    - [go-helpers](#go-helpers)
+    - [Go-Security](#go-security)
+    - [SSH-Scanner](#ssh-scanner)
+    - [tlsdump](#tlsdump)
 - [Python](#python)
     - [Hipchat Proxy](#hipchat-proxy)
     - [Malware Adventure](#malware-adventure)
     - [Customizing SimpleHTTPServer](#customizing-simplehttpserver)
     - [pcap2csv](#pcap2csv)
+    - [sarif-info](#sarif-info)
 - [.NET Remoting](#net-remoting)
 - [Rust](#rust)
     - [YAML Wrangling with Rust](#yaml-wrangling-with-rust)
+    - [Knee Deep in tree-sitter](#knee-deep-in-tree-sitter)
+    - [fearless-concurrency](#fearless-concurrency)
+- [Hugo](#hugo)
+    - [Hugo-Octopress](#hugo-octopress)
+    - [Hugo-Shortcodes](#hugo-shortcodes)
+    - [Hugo-Octopress-Test](#hugo-octopress-test)
+    - [Octopress Image Popup Plugin Forked](#octopress-image-popup-plugin-forked)
 - [Burp](#burp)
     - [Cryptography in Python Burp Extensions](#cryptography-in-python-burp-extensions)
     - [Hiding OPTIONS in Burp](#hiding-options-in-burp)
     - [Swing in Python Burp Extensions](#swing-in-python-burp-extensions)
     - [Using Mozilla Rhino to Run JavaScript in Java](#using-mozilla-rhino-to-run-javascript-in-java)
     - [Java SQLite Test](#java-sqlite-test)
+    - [Sample Java Burp Extension](#sample-java-burp-extension)
+    - [Bug Diaries](#bug-diaries)
+    - [burputils-montoya](#burputils-montoya)
+    - [Looking Glass](#looking-glass)
+    - [eslint-security](#eslint-security)
+    - [ESLinter](#eslinter)
 - [Cryptography](#cryptography)
     - [Cryptopals in C](#cryptopals-in-c)
     - [Decrypting an Application's Encrypted Log](#decrypting-an-applications-encrypted-log)
 - [Endpoint Discovery using Windows DNS Cache](#endpoint-discovery-using-windows-dns-cache)
-- [Octopress Image Popup Plugin Forked](#octopress-image-popup-plugin-forked)
+- [Node](#node)
+    - [Code for "Get Programming with Node.js" book](#code-for-get-programming-with-nodejs-book)
 - [Calculator in C++](#calculator-in-c)
+- [Other](#other)
+    - [PowerPointGlove](#powerpointglove)
+    - [vscode-borrowedtime](#vscode-borrowedtime)
 
 ## [WinAppDbg Tutorials](winappdbg)
 Code for my set of WinAppDbg tutorials.
@@ -73,11 +110,40 @@ See the blog at
 
 Also exists in [https://github.com/parsiya/code-wsl-rce][code-wsl-gh].
 
+### [Evil Electron](evil-electron)
+Backdoored Electron app.asar. A fork of the Electron Quick Start application
+that spawns a command prompt.
+
+### [EvilSwing](EvilSwing)
+Pseudo-backdoored Jar File used in
+[Attack Surface Analysis - Part 1][evilswing-blog].
+
 ## Semgrep
 
 ### [Semgrep Autofix](semgrep-autofix)
 Practice rules and code for the blog
 [A Hands-On Intro to Semgrep's Autofix][semgrep-autofix-blog].
+
+### [semgrep_go](semgrep_go)
+Go package to interact with the Semgrep CLI.
+
+### [semgrep-fun](semgrep-fun)
+Fun experiments with Semgrep. Blog: 
+[A Few Fun Semgrep Experiments][semgrep-fun-blog].
+
+### [semgrep-rs](semgrep-rs)
+Rust library crate to interact with Semgrep.
+
+### [personal-semgrep-server](personal-semgrep-server)
+Personal Semgrep Server for learning Rust. A local server to serve Semgrep
+rules and policies over HTTP.
+
+### [semgrep-rs-example](semgrep-rs-example)
+Example code for interacting with the semgrep-rs crate and testing it.
+
+### [semgrep-hotspots](semgrep-hotspots)
+Repository for Semgrep hot spot rules. Blog:
+[Code Review Hot Spots with Semgrep][semgrep-hotspots-blog].
 
 ## Go
 Go is dope, also see https://github.com/parsiya/Go-Security.
@@ -106,6 +172,47 @@ Files:
 
 * `decrypt.go`: Decrypts the password vault.
 * `cleaned-malware.ps1`: Cleaned version of the PowerShell malware.
+
+### [gonepm](gonepm)
+Golang package to detect backdoored packages in alternate npm registries.
+
+### [f108-pro](f108-pro)
+Go utility created to interact with the Aula/Epomaker F108 Pro keyboard.
+
+Blog: [AI Borked Keyboard][f108-pro-blog].
+
+### [golnk](golnk)
+Golang package for parsing Windows shell link binary (lnk or Windows shortcut)
+files.
+
+### [go-utils](go-utils)
+Collection of Go utilities.
+
+### [go-gitlab-wrapper](go-gitlab-wrapper)
+Wrapper for go-gitlab for some operations.
+
+### [borrowedtime](borrowedtime)
+A project and note management tool for security consultants to automate project
+structure creation.
+
+### [extract-sni](extract-sni)
+Extracts SNIs from a pcap and generates output usable in `etc/hosts` file and
+Burp config for proxying non-proxy-aware thick clients using HTTPs.
+
+- [Thick Client Proxying - Part 10 - The Hosts File][extract-sni-1]
+- [Thick Client Proxying - Part 11 - GoG Galaxy and Extract-SNI][extract-sni-2]
+
+### [go-helpers](go-helpers)
+Go utility code.
+
+### [Go-Security](Go-Security)
+Go security projects. Also see https://github.com/parsiya/Go-Security.
+
+### [SSH-Scanner](SSH-Scanner)
+Simple SSH vulnerability scanner based on SSH Harvester.
+
+### [tlsdump](tlsdump)
+Learning Golang by creating a TLS terminating proxy.
 
 ## Python
 
@@ -139,6 +246,9 @@ Code for the blog post
 ### [pcap2csv](pcap2csv)
 A few python scripts to extract information from pcap files to csv.
 
+### [sarif-info](sarif-info)
+Personal utility to work with SARIF files.
+
 ## [.NET Remoting](net-remoting)
 Code and example program used in:
 
@@ -149,6 +259,35 @@ Fearless Concurrency.
 
 ### [YAML Wrangling with Rust](yaml-wrangling-with-rust/)
 Code for the blog post [YAML Wrangling with Rust][yaml-rust].
+
+### [Knee Deep in tree-sitter](knee-deep-tree-sitter)
+Code for the "Knee Deep in tree-sitter" blog posts.
+
+- [Knee Deep in tree-sitter Queries][knee-deep-tree-sitter-1]
+- [Knee Deep in tree-sitter CST][knee-deep-tree-sitter-2]
+
+### [fearless-concurrency](fearless-concurrency)
+Notes and exercises from learning Rust from "The Book."
+
+## Hugo
+
+### [Hugo-Octopress](Hugo-Octopress)
+Port of the classic Octopress theme to Hugo.
+
+### [Hugo-Shortcodes](Hugo-Shortcodes)
+Parsia's Hugo Shortcodes.
+
+### [Hugo-Octopress-Test](Hugo-Octopress-Test)
+Demo website of vanilla Hugo-Octopress.
+
+### [Octopress Image Popup Plugin Forked](octopress-image-popup-forked)
+This is a fork of the Octopress Image Popup Plugin at
+[https://github.com/ctdk/octopress-image-popup][original-popup] by Jeremy
+Bingham. The original instructions did not work for me out of the box so I made
+some minor changes. Because it has a different license, I am keeping it in a
+separate repository.
+
+Blog: [Image Popup and Octopress][pop-up-blog].
 
 ## Burp
 Mostly Burp extension code.
@@ -182,6 +321,33 @@ Code used in:
 Sample code to learn how to interact with a SQLite database in Java with
 `org.xerial.sqlite-jdbc`.
 
+### [Sample Java Burp Extension](burp-sample-extension-java)
+Sample Burp extension in Java used in:
+
+- [Developing and Debugging Java Burp Extensions with Visual Studio Code][burp-debug].
+
+[burp-debug]: https://parsiya.net/blog/2019-12-02-developing-and-debugging-java-burp-extensions-with-visual-studio-code/
+
+### [Bug Diaries](bug-diaries)
+A extension for Burp's free edition that mimics the pro edition's custom scan
+issues.
+
+### [burputils-montoya](burputils-montoya)
+Burp utilities for Montoya APIs mainly for learning Kotlin.
+
+### [Looking Glass](looking-glass)
+A Burp extension to store all traffic in a sqlite database for logging or
+discovering insights.
+
+### [eslint-security](eslint-security)
+Repository to install ESLint, plugins and js-beautify. Companion to the ESLinter
+Burp extension.
+
+### [ESLinter](eslinter)
+A Burp extension that extracts JavaScript from responses and lints them with
+ESLint while you do your manual testing. See
+[Developing and Debugging Java Burp Extensions with Visual Studio Code][burp-debug].
+
 ## Cryptography
 
 ### [Cryptopals in C](cryptopals/c)
@@ -198,21 +364,25 @@ A couple of PowerShell scripts that use the Windows DNS cache to discover applic
 
 - Blog post: [Thick Client Proxying - Part 9 - The Windows DNS Cache][dns-cache]
 
-## [Octopress Image Popup Plugin Forked](https://github.com/parsiya/octopress-image-popup-forked)
-This is a fork of the Octopress Image Popup Plugin at
-[https://github.com/ctdk/octopress-image-popup][original-popup] by Jeremy
-Bingham. The original instructions did not work for me out of the box so I made
-some minor changes. Because it has a different license, I am keeping it in a
-separate repository.
+## Node
+node.js because it's hip.
 
-- Blog post
-    - [Image Popup and Octopress][pop-up-blog].
+### [Code for "Get Programming with Node.js" book](get-programming-with-node-js)
+node.js code written pre-LLMs.
 
 ## [Calculator in C++](calculator.cpp)
 I found this code in an old archive. It's some calculator I wrote back in
 undergrad. It draws shapes on the screen and depending on where you click, you
 get a number. Pretty much all of it was done manually. The only thing I
 remember, is that I needed to have `C:\\egavga.bgi` for it to work. Fun times.
+
+## Other
+
+### [PowerPointGlove](PowerPointGlove)
+PowerPoint Glove presentation code for DEF CON 33 Hardware Hacking Village.
+
+### [vscode-borrowedtime](vscode-borrowedtime)
+A basic note and knowledge management tool as a VS Code extension.
 
 <!-- Links -->
 
@@ -240,3 +410,11 @@ remember, is that I needed to have `C:\\egavga.bgi` for it to work. Fun times.
 [python-httpserver]: https://parsiya.net/blog/2020-11-15-customizing-pythons-simplehttpserver/
 [semgrep-autofix-blog]: https://parsiya.net/blog/2021-10-25-a-hands-on-intro-to-semgreps-autofix/
 [yaml-rust]: https://parsiya.net/blog/2022-10-16-yaml-wrangling-with-rust/
+[f108-pro-blog]: https://parsiya.net/blog/ai-borked-keyboard/
+[knee-deep-tree-sitter-1]: https://parsiya.net/blog/knee-deep-tree-sitter-queries/
+[knee-deep-tree-sitter-2]: https://parsiya.net/blog/knee-deep-tree-sitter-2/
+[semgrep-fun-blog]: https://parsiya.net/blog/semgrep-fun/
+[semgrep-hotspots-blog]: https://parsiya.net/blog/2022-04-07-code-review-hot-spots-with-semgrep/
+[extract-sni-1]: https://parsiya.net/blog/2020-05-09-thick-client-proxing-part-10-the-hosts-file/
+[extract-sni-2]: https://parsiya.net/blog/2020-06-22-thick-client-proxying-part-11-gog-galaxy-and-extract-sni/
+[evilswing-blog]: https://parsiya.net/blog/2021-01-08-attack-surface-analysis-part-1-application-update-a-novel-way-to-bypass-executable-signature-checks-with-electron/
